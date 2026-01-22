@@ -13,37 +13,26 @@ export default function Header() {
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="fixed top-0 left-0 right-0 z-50 glass"
+            className="absolute top-0 left-0 w-full z-50 pt-6 px-6 flex justify-center"
         >
-            <div className="container mx-auto px-4 py-0 flex items-center justify-between">
-                {/* Logo */}
+            <div className="flex items-center gap-3">
+                <div className="relative w-12 h-12 overflow-hidden rounded-lg shadow-lg">
+                    <Image
+                        src="/logo.jpg"
+                        alt="Art Odonto Digital"
+                        fill
+                        className="object-cover scale-150"
+                        unoptimized
+                    />
+                </div>
                 <div className="flex items-center gap-2">
-                    <div className="relative w-16 h-16 overflow-hidden rounded-lg">
-                        <Image
-                            src="/logo.jpg"
-                            alt="Art Odonto Digital"
-                            fill
-                            className="object-cover scale-175"
-                            unoptimized
-                        />
-                    </div>
-                    <span className="text-sm font-medium text-slate-200 hidden sm:block">
-                        Art Odonto Digital
+                    <span className="text-lg font-montserrat font-bold text-white tracking-wide leading-none">
+                        Art Odonto
+                    </span>
+                    <span className="text-lg font-light text-cyan-400 tracking-widest uppercase">
+                        Digital
                     </span>
                 </div>
-
-                {/* CTA Button */}
-                <a
-                    href={WHATSAPP_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    id="btn-header-cta"
-                    data-gtm="header-cta"
-                    className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-4 py-2 rounded-full text-sm transition-colors"
-                >
-                    <Phone size={16} />
-                    <span>Agendar</span>
-                </a>
             </div>
         </motion.header>
     );
