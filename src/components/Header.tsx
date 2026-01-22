@@ -15,17 +15,18 @@ export default function Header() {
             transition={{ duration: 0.5 }}
             className="fixed top-0 left-0 right-0 z-50 glass"
         >
-            <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div className="container mx-auto px-4 py-0 flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <Image
-                        src="/logo.jpg"
-                        alt="Art Odonto Digital"
-                        width={40}
-                        height={40}
-                        className="rounded-lg"
-                        unoptimized
-                    />
+                    <div className="relative w-16 h-16 overflow-hidden rounded-lg">
+                        <Image
+                            src="/logo.jpg"
+                            alt="Art Odonto Digital"
+                            fill
+                            className="object-cover scale-175"
+                            unoptimized
+                        />
+                    </div>
                     <span className="text-sm font-medium text-slate-200 hidden sm:block">
                         Art Odonto Digital
                     </span>

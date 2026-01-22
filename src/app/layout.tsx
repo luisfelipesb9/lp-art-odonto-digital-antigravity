@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Art Odonto Digital | Conquiste o Sorriso dos Sonhos",
     description:
-      "Tecnologia digital e atendimento humanizado. A nova referência em odontologia no Major Prates, Montes Claros.",
+      "Tecnologia digital e atendimento humanizado. Referência em odontologia em Montes Claros.",
     locale: "pt_BR",
     type: "website",
   },

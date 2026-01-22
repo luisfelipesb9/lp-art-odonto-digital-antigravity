@@ -11,29 +11,29 @@ export default function HeroSection() {
     return (
         <section className="hero-gradient min-h-screen relative overflow-hidden pt-20">
             {/* Content Container */}
-            <div className="container mx-auto px-4 py-8 lg:py-16 flex flex-col lg:flex-row items-center">
+            <div className="container mx-auto px-4 pt-4 pb-4 lg:py-16 flex flex-col lg:flex-row items-center h-full sm:h-auto justify-center lg:justify-start">
                 {/* Left Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.7, delay: 0.2 }}
-                    className="flex-1 text-center lg:text-left z-10"
+                    className="w-full lg:flex-1 text-center lg:text-left z-10 flex flex-col items-center lg:items-start"
                 >
                     {/* Headline */}
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-3 sm:mb-6 mt-4 lg:mt-0">
                         Conquiste o
                         <br />
                         <span className="text-white">sorriso </span>
                         <span className="italic font-light text-cyan-400">que</span>
-                        <br />
-                        <span className="italic font-light text-cyan-400">sempre </span>
+                        <br className="hidden sm:block" />
+                        <span className="italic font-light text-cyan-400 ml-1 sm:ml-0">sempre </span>
                         <span className="text-white">sonhou</span>
                     </h1>
 
                     {/* Subheadline */}
-                    <p className="text-slate-400 text-lg sm:text-xl mb-8 max-w-md mx-auto lg:mx-0">
-                        Tecnologia digital e atendimento humanizado. A nova referência em
-                        odontologia no Major Prates, Montes Claros.
+                    <p className="text-slate-400 text-sm sm:text-xl mb-4 sm:mb-8 max-w-md mx-auto lg:mx-0 px-2 sm:px-0">
+                        Tecnologia digital e atendimento humanizado. Referência em
+                        odontologia em Montes Claros.
                     </p>
 
                     {/* CTA Button */}
@@ -45,9 +45,9 @@ export default function HeroSection() {
                         data-gtm="whatsapp-hero"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="inline-flex items-center gap-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold px-8 py-4 rounded-full text-lg btn-pulse transition-colors"
+                        className="inline-flex items-center gap-2 sm:gap-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg btn-pulse transition-colors mb-2 lg:mb-0"
                     >
-                        <MessageCircle size={24} />
+                        <MessageCircle size={20} className="sm:w-6 sm:h-6" />
                         Agendar uma avaliação
                     </motion.a>
                 </motion.div>
@@ -57,13 +57,13 @@ export default function HeroSection() {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="flex-1 relative mt-12 lg:mt-0"
+                    className="w-full lg:flex-1 relative -mt-14 lg:mt-0 flex justify-center"
                 >
                     {/* Glow Effect */}
-                    <div className="absolute inset-0 glow-effect scale-150" />
+                    <div className="absolute inset-0 glow-effect scale-125 lg:scale-150 opacity-60 lg:opacity-100" />
 
                     {/* Doctor Image Container */}
-                    <div className="relative z-10">
+                    <div className="relative z-10 w-[80%] sm:w-auto max-w-[320px] lg:max-w-none">
                         <Image
                             src="/dra-hanne.jpg"
                             alt="Dra. Hanne Fiuza - Art Odonto Digital"
@@ -78,10 +78,10 @@ export default function HeroSection() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 1, duration: 0.5 }}
-                            className="absolute left-0 top-1/3 glass px-4 py-2 rounded-full"
+                            className="absolute -left-4 sm:left-0 top-1/3 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
                         >
-                            <span className="text-xs sm:text-sm text-cyan-400 font-medium">
-                                🦷 Implantes Dentários
+                            <span className="text-[10px] sm:text-sm text-cyan-400 font-medium whitespace-nowrap">
+                                🦷 Reabilitação Oral
                             </span>
                         </motion.div>
 
@@ -89,10 +89,10 @@ export default function HeroSection() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 1.2, duration: 0.5 }}
-                            className="absolute right-0 top-1/4 glass px-4 py-2 rounded-full"
+                            className="absolute -right-4 sm:right-0 top-1/4 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
                         >
-                            <span className="text-xs sm:text-sm text-cyan-400 font-medium">
-                                ✨ Cirurgiã Dentista
+                            <span className="text-[10px] sm:text-sm text-cyan-400 font-medium whitespace-nowrap">
+                                ✨ Cirurgiã-Dentista
                             </span>
                         </motion.div>
 
@@ -100,10 +100,10 @@ export default function HeroSection() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 1.4, duration: 0.5 }}
-                            className="absolute right-4 bottom-1/4 glass px-4 py-2 rounded-full"
+                            className="absolute right-0 sm:right-4 bottom-8 sm:bottom-1/4 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
                         >
-                            <span className="text-xs sm:text-sm text-cyan-400 font-medium">
-                                💎 Harmonização Facial
+                            <span className="text-[10px] sm:text-sm text-cyan-400 font-medium whitespace-nowrap">
+                                💎 Odontologia Estética
                             </span>
                         </motion.div>
                     </div>
