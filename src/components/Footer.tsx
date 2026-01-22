@@ -19,6 +19,7 @@ export default function Footer() {
                                 width={48}
                                 height={48}
                                 className="rounded-lg"
+                                unoptimized
                             />
                             <div>
                                 <p className="font-semibold text-white">Art Odonto Digital</p>

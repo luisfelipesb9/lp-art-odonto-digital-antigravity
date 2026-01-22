@@ -24,6 +24,7 @@ export default function Header() {
                         width={40}
                         height={40}
                         className="rounded-lg"
+                        unoptimized
                     />
                     <span className="text-sm font-medium text-slate-200 hidden sm:block">
                         Art Odonto Digital

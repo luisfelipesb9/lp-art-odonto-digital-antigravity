@@ -65,7 +65,7 @@ export default function HeroSection() {
                     {/* Doctor Image Container */}
                     <div className="relative z-10">
                         <Image
-                            src="/dra-hanne.png"
+                            src="/dra-hanne.jpg"
                             alt="Dra. Hanne Fiuza - Art Odonto Digital"
                             width={500}
                             height={600}
