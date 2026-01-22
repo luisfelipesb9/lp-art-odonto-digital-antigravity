@@ -9,9 +9,9 @@ const WHATSAPP_LINK =
 
 export default function HeroSection() {
     return (
-        <section className="hero-gradient min-h-screen relative overflow-hidden pt-20">
+        <section className="hero-gradient min-h-screen relative overflow-hidden pt-16">
             {/* Content Container */}
-            <div className="container mx-auto px-4 pt-4 pb-4 lg:py-16 flex flex-col lg:flex-row items-center h-full sm:h-auto justify-center lg:justify-start">
+            <div className="container mx-auto px-4 pt-0 pb-4 lg:py-16 flex flex-col lg:flex-row items-center h-full sm:h-auto justify-center lg:justify-start">
                 {/* Left Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
@@ -20,7 +20,7 @@ export default function HeroSection() {
                     className="w-full lg:flex-1 text-center lg:text-left z-10 flex flex-col items-center lg:items-start"
                 >
                     {/* Headline */}
-                    <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-3 sm:mb-6 mt-4 lg:mt-0">
+                    <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-3 sm:mb-6 mt-2 lg:mt-0">
                         Conquiste o
                         <br />
                         <span className="text-white">sorriso </span>
@@ -59,8 +59,11 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="w-full lg:flex-1 relative -mt-14 lg:mt-0 flex justify-center"
                 >
-                    {/* Glow Effect */}
-                    <div className="absolute inset-0 glow-effect scale-125 lg:scale-150 opacity-60 lg:opacity-100" />
+                    {/* Glow Effect / Shadow Integration */}
+                    <div className="absolute inset-0 doctor-shadow scale-125 lg:scale-150 transform translate-y-10" />
+
+                    {/* Bottom Fade Integration */}
+                    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[var(--color-background)] to-transparent z-20" />
 
                     {/* Doctor Image Container */}
                     <div className="relative z-10 w-[80%] sm:w-auto max-w-[320px] lg:max-w-none">
@@ -78,7 +81,7 @@ export default function HeroSection() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 1, duration: 0.5 }}
-                            className="absolute -left-4 sm:left-0 top-1/3 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
+                            className="absolute -left-4 sm:left-0 top-1/2 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
                         >
                             <span className="text-[10px] sm:text-sm text-cyan-400 font-medium whitespace-nowrap">
                                 🦷 Reabilitação Oral
@@ -89,7 +92,7 @@ export default function HeroSection() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 1.2, duration: 0.5 }}
-                            className="absolute -right-4 sm:right-0 top-1/4 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
+                            className="absolute -right-4 sm:right-0 top-[28%] glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
                         >
                             <span className="text-[10px] sm:text-sm text-cyan-400 font-medium whitespace-nowrap">
                                 ✨ Cirurgiã-Dentista
@@ -100,7 +103,7 @@ export default function HeroSection() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 1.4, duration: 0.5 }}
-                            className="absolute right-0 sm:right-4 bottom-8 sm:bottom-1/4 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
+                            className="absolute right-0 sm:right-4 bottom-12 sm:bottom-1/4 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
                         >
                             <span className="text-[10px] sm:text-sm text-cyan-400 font-medium whitespace-nowrap">
                                 💎 Odontologia Estética
