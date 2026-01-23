@@ -38,33 +38,13 @@ export default function ClinicSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                        A <span className="text-cyan-400">Clínica</span>
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
+                        Sobre nossa <span className="text-cyan-400 text-shadow-glow">clínica</span>
                     </h2>
                     <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-                        A Art Odonto Digital chega a Montes Claros com uma proposta
-                        inovadora: unir o que há de mais moderno em tecnologia odontológica
-                        com um atendimento verdadeiramente humanizado.
-                    </p>
-                </motion.div>
-
-                {/* Dra. Hanne Highlight */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    className="glass rounded-2xl p-6 sm:p-8 mb-16 text-center"
-                >
-                    <div className="inline-flex items-center gap-2 bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full mb-4">
-                        <Sparkles size={16} />
-                        <span className="text-sm font-medium">Especialista em Estética</span>
-                    </div>
-                    <h3 className="text-2xl font-bold mb-3">Dra. Hanne Fiuza</h3>
-                    <p className="text-slate-400 max-w-xl mx-auto">
-                        Cirurgiã-dentista apaixonada por transformar sorrisos. Especialista
-                        em estética dental e harmonização facial, com formação nas melhores
-                        instituições do país.
+                        Unimos tecnologia digital de ponta, atendimento humanizado, estética
+                        avançada e especialistas altamente qualificados para transformar seu
+                        sorriso com excelência.
                     </p>
                 </motion.div>
 
@@ -77,13 +57,25 @@ export default function ClinicSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="glass rounded-xl p-6 text-center hover:border-cyan-500/30 transition-colors"
+                            className="group relative overflow-hidden rounded-2xl card-gradient p-8 border border-white/5 hover:border-cyan-500/30 transition-all duration-300 shadow-lg shadow-cyan-900/5 hover:shadow-cyan-500/10"
                         >
-                            <div className="inline-flex items-center justify-center w-12 h-12 bg-cyan-500/10 rounded-lg mb-4">
-                                <feature.icon className="text-cyan-400" size={24} />
+                            <div className="absolute inset-0 bg-grid-pattern opacity-20" />
+                            <div className="relative z-10 flex flex-col items-start h-full">
+                                <div className="mb-6 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                    <feature.icon size={42} strokeWidth={1.5} />
+                                </div>
+
+                                <span className="text-xs font-medium tracking-widest text-slate-500 mb-2 uppercase">
+                                    Diferencial
+                                </span>
+
+                                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-cyan-400 transition-colors">
+                                    {feature.title}
+                                </h3>
+                                <p className="text-slate-400 leading-relaxed text-sm">
+                                    {feature.description}
+                                </p>
                             </div>
-                            <h3 className="font-semibold mb-2">{feature.title}</h3>
-                            <p className="text-slate-400 text-sm">{feature.description}</p>
                         </motion.div>
                     ))}
                 </div>
