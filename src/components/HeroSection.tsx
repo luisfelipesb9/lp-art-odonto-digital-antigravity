@@ -109,6 +109,17 @@ export default function HeroSection() {
                                 💎 Odontologia Estética
                             </span>
                         </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 1.6, duration: 0.5 }}
+                            className="absolute -right-4 sm:-right-12 bottom-36 sm:bottom-[50%] glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
+                        >
+                            <span className="text-[10px] sm:text-sm text-cyan-400 font-medium whitespace-nowrap">
+                                ✨ Harmonização Orofacial
+                            </span>
+                        </motion.div>
                     </div>
                 </motion.div>
             </div>
