@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 const WHATSAPP_LINK =
-    "https://wa.me/5538220015833?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.";
+    "https://wa.me/5538999406524?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
 
 export default function FloatingWhatsApp() {
     const [isVisible, setIsVisible] = useState(false);

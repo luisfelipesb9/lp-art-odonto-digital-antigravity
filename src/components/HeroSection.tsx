@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 const WHATSAPP_LINK =
-    "https://wa.me/5538220015833?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.";
+    "https://wa.me/5538999406524?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
 
 export default function HeroSection() {
     return (
@@ -17,7 +17,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.7, delay: 0.2 }}
-                    className="w-full lg:flex-1 text-center lg:text-left z-10 flex flex-col items-center lg:items-start"
+                    className="w-full lg:flex-1 text-center lg:text-left z-30 flex flex-col items-center lg:items-start"
                 >
                     {/* Headline */}
                     <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-3 sm:mb-6 mt-2 lg:mt-0">

@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Art Odonto Digital | Dra. Hanne Fiuza | Montes Claros MG",
+  title: "Art Odonto Digital",
   description:
     "Clínica odontológica com tecnologia digital em Montes Claros. Implantes, estética dental e harmonização facial. Agende sua avaliação com a Dra. Hanne Fiuza.",
   keywords: [
@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     "dra hanne fiuza",
     "art odonto digital",
   ],
+  icons: {
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
   openGraph: {
     title: "Art Odonto Digital | Conquiste o Sorriso dos Sonhos",
     description:

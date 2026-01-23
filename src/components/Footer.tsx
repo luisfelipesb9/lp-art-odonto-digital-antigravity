@@ -16,14 +16,14 @@ export default function Footer() {
                             <Image
                                 src="/logo.jpg"
                                 alt="Art Odonto Digital"
-                                width={48}
-                                height={48}
+                                width={180}
+                                height={180}
                                 className="rounded-lg"
                                 unoptimized
                             />
                             <div>
-                                <p className="font-semibold text-white">Art Odonto Digital</p>
-                                <p className="text-sm text-slate-400">Clínicas Odontológicas</p>
+                                <p className="font-semibold text-white text-lg">Art Odonto Digital</p>
+                                <p className="text-base text-slate-400">Clínica Odontológica</p>
                             </div>
                         </div>
                         <p className="text-slate-400 text-sm">
@@ -38,7 +38,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-center gap-2 text-slate-400">
                                 <Phone size={16} className="text-cyan-400" />
-                                (38) 2200-1583
+                                (38) 99940-6524
                             </li>
                             <li className="text-slate-400">
                                 Av. Francisco Gaetani, 1339
@@ -53,18 +53,15 @@ export default function Footer() {
                         <h3 className="font-semibold mb-4">Redes Sociais</h3>
                         <div className="flex gap-4">
                             <a
-                                href="#"
+                                href="https://www.instagram.com/art.odonto.digital/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="btn-instagram-footer"
+                                data-gtm="instagram-footer"
                                 className="w-10 h-10 rounded-full bg-slate-800 hover:bg-cyan-500/20 flex items-center justify-center transition-colors"
                                 aria-label="Instagram"
                             >
                                 <Instagram size={20} className="text-slate-400" />
-                            </a>
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-cyan-500/20 flex items-center justify-center transition-colors"
-                                aria-label="Facebook"
-                            >
-                                <Facebook size={20} className="text-slate-400" />
                             </a>
                         </div>
                     </div>
