@@ -33,6 +33,14 @@ export const metadata: Metadata = {
       "Tecnologia digital e atendimento humanizado. Referência em odontologia em Montes Claros.",
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/social-proof-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Dra. Hanne Fiuza e Paciente - Art Odonto Digital",
+      },
+    ],
   },
 };
 
