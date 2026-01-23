@@ -47,7 +47,7 @@ export default function SocialProof() {
     };
 
     return (
-        <section className="py-20 bg-slate-900">
+        <section className="pt-10 pb-20 bg-slate-900">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
                 <motion.div
@@ -58,7 +58,7 @@ export default function SocialProof() {
                     className="text-center mb-12"
                 >
                     <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
-                        Sorrisos <span className="text-cyan-400 text-shadow-glow">Transformados</span>
+                        Transformações <span className="text-cyan-400 text-shadow-glow">Reais</span>
                     </h2>
                     <p className="text-slate-400 max-w-2xl mx-auto text-lg">
                         Veja os resultados reais dos nossos pacientes e o que eles têm a

@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "art odonto digital",
   ],
   icons: {
-    icon: "/logo.jpg",
-    shortcut: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/logo-fav.png",
+    shortcut: "/logo-fav.png",
+    apple: "/logo-fav.png",
   },
   openGraph: {
     title: "Art Odonto Digital | Conquiste o Sorriso dos Sonhos",
