@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import { MapPin, Clock, Phone, Navigation, MessageCircle } from "lucide-react";
 
 const WHATSAPP_LINK =
-    "https://wa.me/5538220015833?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.";
+    "https://wa.me/5538999406524?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
 
 const MAPS_LINK =
     "https://www.google.com/maps/dir/?api=1&destination=Av.+Francisco+Gaetani,+1339+-+Maj.+Prates,+Montes+Claros+-+MG";
 
 const contactInfo = {
     address: "Av. Francisco Gaetani, 1339 - Maj. Prates, Montes Claros - MG",
-    phone: "(38) 2200-1583",
+    phone: "(38) 99940-6524",
     hours: [
         { days: "Segunda a Sexta", time: "09h às 18h" },
         { days: "Sábado", time: "09h às 12h" },
