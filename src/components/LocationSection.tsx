@@ -40,7 +40,7 @@ export default function LocationSection() {
                 </motion.div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {/* Map Placeholder */}
+                    {/* Google Maps Embed */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -48,35 +48,17 @@ export default function LocationSection() {
                         transition={{ duration: 0.6 }}
                         className="glass rounded-2xl overflow-hidden aspect-[4/3] lg:aspect-auto"
                     >
-                        <div className="w-full h-full min-h-[300px] bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative">
-                            {/* Placeholder Map */}
-                            <div className="text-center z-10">
-                                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-cyan-500/10 flex items-center justify-center">
-                                    <MapPin className="text-cyan-500" size={40} />
-                                </div>
-                                <p className="text-slate-400 mb-2">Google Maps</p>
-                                <a
-                                    href={MAPS_LINK}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-cyan-400 hover:text-cyan-300 text-sm underline"
-                                >
-                                    Ver no mapa
-                                </a>
-                            </div>
-
-                            {/* Grid overlay */}
-                            <div className="absolute inset-0 opacity-10">
-                                <div
-                                    className="w-full h-full"
-                                    style={{
-                                        backgroundImage:
-                                            "linear-gradient(rgba(6,182,212,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(6,182,212,0.3) 1px, transparent 1px)",
-                                        backgroundSize: "40px 40px",
-                                    }}
-                                />
-                            </div>
-                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.477687100947!2d-43.88251292484937!3d-16.752893384030102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab530059025f95%3A0x991a5a05d27d6741!2sART%20ODONTO%20DIGITAL%20CL%C3%8DNICAS%20ODONTOL%C3%93GICAS!5e0!3m2!1spt-BR!2sbr!4v1769128771449!5m2!1spt-BR!2sbr"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0, minHeight: "300px" }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Localização Art Odonto Digital"
+                            className="w-full h-full min-h-[300px]"
+                        />
                     </motion.div>
 
                     {/* Contact Info */}
