@@ -100,10 +100,10 @@ export default function HeroSection() {
                         </motion.div>
 
                         <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 1.4, duration: 0.5 }}
-                            className="absolute right-0 sm:right-4 bottom-12 sm:bottom-1/4 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
+                            className="absolute left-1/2 -translate-x-1/2 bottom-12 sm:bottom-1/4 glass px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
                         >
                             <span className="text-[10px] sm:text-sm text-cyan-400 font-medium whitespace-nowrap">
                                 💎 Odontologia Estética
