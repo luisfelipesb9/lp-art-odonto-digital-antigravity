@@ -78,7 +78,7 @@ export default function SocialProof() {
                         {/* Left Arrow */}
                         <button
                             onClick={prevSlide}
-                            className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-500 text-cyan-500 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-900 transition-colors"
+                            className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-[#FFDE21] text-[#FFDE21] flex items-center justify-center hover:bg-[#FFDE21] hover:text-slate-900 transition-colors"
                             aria-label="Anterior"
                         >
                             <ChevronLeft size={28} />
@@ -107,7 +107,7 @@ export default function SocialProof() {
                         {/* Right Arrow */}
                         <button
                             onClick={nextSlide}
-                            className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-cyan-500 text-cyan-500 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-900 transition-colors"
+                            className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-[#FFDE21] text-[#FFDE21] flex items-center justify-center hover:bg-[#FFDE21] hover:text-slate-900 transition-colors"
                             aria-label="Próximo"
                         >
                             <ChevronRight size={28} />

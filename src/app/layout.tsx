@@ -26,11 +26,7 @@ export const metadata: Metadata = {
     "dra hanne fiuza",
     "art odonto digital",
   ],
-  icons: {
-    icon: "/logo-fav.png",
-    shortcut: "/logo-fav.png",
-    apple: "/logo-fav.png",
-  },
+
   openGraph: {
     title: "Art Odonto Digital | Conquiste o Sorriso dos Sonhos",
     description:
