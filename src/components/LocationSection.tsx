@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MapPin, Clock, Phone, Navigation, MessageCircle } from "lucide-react";
 
 const WHATSAPP_LINK =
-    "https://wa.me/5538999406524?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
+    "https://wa.me/553822001583?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
 
 const MAPS_LINK =
     "https://www.google.com/maps/dir/?api=1&destination=Av.+Francisco+Gaetani,+1339+-+Maj.+Prates,+Montes+Claros+-+MG";
