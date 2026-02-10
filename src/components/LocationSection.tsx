@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MapPin, Clock, Phone, Navigation, MessageCircle } from "lucide-react";
-import { trackWhatsAppConversion } from "@/lib/gtag";
+import { trackWhatsAppConversion, trackTracarRota } from "@/lib/gtag";
 
 const WHATSAPP_LINK =
     "https://wa.me/553822001583?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
@@ -116,6 +116,7 @@ export default function LocationSection() {
                                 rel="noopener noreferrer"
                                 id="btn-tracar-rota"
                                 data-gtm="tracar-rota"
+                                onClick={trackTracarRota}
                                 className="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-full transition-colors"
                             >
                                 <Navigation size={20} />

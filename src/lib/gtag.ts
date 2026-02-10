@@ -22,3 +22,17 @@ export function trackWhatsAppConversion() {
         });
     }
 }
+
+/**
+ * Fires a custom GA4 event when the "Traçar Rota" button is clicked.
+ * This is NOT a Google Ads conversion — it's a monitoring event
+ * to track user intent without affecting campaign optimization.
+ */
+export function trackTracarRota() {
+    if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "tracar_rota", {
+            event_category: "engagement",
+            event_label: "google_maps_directions",
+        });
+    }
+}
