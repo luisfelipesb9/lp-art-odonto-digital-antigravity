@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import { trackWhatsAppConversion } from "@/lib/gtag";
 
 const WHATSAPP_LINK =
     "https://wa.me/553822001583?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
@@ -43,6 +44,7 @@ export default function HeroSection() {
                         rel="noopener noreferrer"
                         id="btn-whatsapp-hero"
                         data-gtm="whatsapp-hero"
+                        onClick={trackWhatsAppConversion}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="inline-flex items-center gap-2 sm:gap-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg btn-pulse transition-colors mb-2 lg:mb-0"

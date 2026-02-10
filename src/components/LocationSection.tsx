@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MapPin, Clock, Phone, Navigation, MessageCircle } from "lucide-react";
+import { trackWhatsAppConversion } from "@/lib/gtag";
 
 const WHATSAPP_LINK =
     "https://wa.me/553822001583?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
@@ -126,6 +127,7 @@ export default function LocationSection() {
                                 rel="noopener noreferrer"
                                 id="btn-whatsapp-location"
                                 data-gtm="whatsapp-location"
+                                onClick={trackWhatsAppConversion}
                                 className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-semibold px-6 py-3 rounded-full transition-colors"
                             >
                                 <MessageCircle size={20} />

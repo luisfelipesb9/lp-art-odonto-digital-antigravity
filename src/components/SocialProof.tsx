@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Star, Quote, ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
+import { trackWhatsAppConversion } from "@/lib/gtag";
 
 const WHATSAPP_LINK =
     "https://wa.me/553822001583?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
@@ -129,6 +130,7 @@ export default function SocialProof() {
                         rel="noopener noreferrer"
                         id="btn-whatsapp-carousel"
                         data-gtm="whatsapp-carousel"
+                        onClick={trackWhatsAppConversion}
                         className="inline-flex items-center gap-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold px-8 py-4 rounded-full text-lg btn-pulse transition-colors"
                     >
                         <MessageCircle size={24} />

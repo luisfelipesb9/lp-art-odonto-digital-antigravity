@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import { trackWhatsAppConversion } from "@/lib/gtag";
 
 const WHATSAPP_LINK =
     "https://wa.me/553822001583?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação.&v=1";
@@ -29,6 +30,7 @@ export default function FloatingWhatsApp() {
                     rel="noopener noreferrer"
                     id="btn-whatsapp-float"
                     data-gtm="whatsapp-float"
+                    onClick={trackWhatsAppConversion}
                     initial={{ scale: 0, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     exit={{ scale: 0, opacity: 0 }}
